@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+span{
+    font-weight: 900;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.conteudo{
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+
+img{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Imagem */
+
+.imagem p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.imagem h1{
+    margin-bottom: 10px;
+}
+
+/* Preparação */
+
+.preparacao, .ingredientes, .instrucoes{
+    margin-bottom: 30px;
+}
+
+.preparacao h2{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.preparacao ul li{
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+/* Ingrediente */
+
+.ingredientes h2{
+    margin-bottom: 15px;
+}
+
+.ingredientes ul li{
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* instrucoes */
+
+.instrucoes h2{
+    padding-bottom: 10px;
+}
+
+.instrucoes ol li{
+    margin-left: 30px;
+    padding-bottom: 15px;
+}
+
+/* nutrição */
+
+.nutricao h2{
+    padding-bottom: 20px;
+
+}
+
+.nutricao p{
+    padding-bottom: 20px;
+}
+
+.nutricao table tbody tr td{
+    padding-right: 200px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 844px) {
+    img{
+        padding-top: 0;
+        height: auto;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .pai-flex{
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex{
+        width: 80%;
+    }
+
+    .nutricao table tbody tr td{
+        padding-right: 50px;
+    }
+    
+}
